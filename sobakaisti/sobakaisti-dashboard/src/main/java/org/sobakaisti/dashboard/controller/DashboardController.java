@@ -17,7 +17,7 @@ public class DashboardController {
 	/* Dashboard home page */
 	@RequestMapping(value="/", method=RequestMethod.GET)
 	public String displayDashHome(){
-		System.out.println("Pozivam konstuktor: DashboardController");
+		System.out.println("Pozivam konstuktor: DashboardController nakon izmene");
 		return "home";
 	}
 }
