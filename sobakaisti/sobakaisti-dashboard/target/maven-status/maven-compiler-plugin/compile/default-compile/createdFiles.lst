@@ -1,0 +1,5 @@
+org/sobakaisti/dashboard/controller/DashboardController.class
+org/sobakaisti/dashboard/controller/ArticleController.class
+org/sobakaisti/dashboard/config/AppInitializer.class
+org/sobakaisti/dashboard/config/DashboardWebMvcConfiguration.class
+org/sobakaisti/dashboard/controller/SobakaistiController.class
