@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th="http:/www.thymeleaf.org">
 
 <head th:replace="commons/dash_head :: dash_head(~{::title})">
 	<title>Articles</title>	
@@ -29,12 +29,12 @@
 		<tbody>
 			<tr th:each="article : ${articles}" th:class="table-row" th:id="'item-'+${article.id}">
 				<td th:with="id=${article.id}" class="article-status-td">
-					<a th:href="@{/sbk-admin/article/change_status/{id}(id=${id})}" class="change-status-link" th:alt="${article.id}">
+					<a th:href="@{/articles/change_status/{id}(id=${id})}" class="change-status-link" th:alt="${article.id}">
 						<img alt="status" th:src="@{'/resources/img/icons/active-'+${article.active}+'.svg'}" width="16" height="16" class="article-status-icon">
 					</a>
 				</td>
 				<td th:with="slug=${article.slug}">
-					<a th:href="@{/sbk-admin/sobakaisti/{slug}(slug=${slug})}" class="title-link" th:text="${article.title}"></a>
+					<a th:href="@{/sobakaisti/{slug}(slug=${slug})}" class="title-link" th:text="${article.title}"></a>
 					<div>
 					<span class="artice-meta" th:text="#{label.author}">autor</span>
 					<span class="artice-meta" th:text="${article.author.firstName}+' '+${article.author.lastName}"></span>
@@ -57,10 +57,10 @@
 				</td>				
 				<td>
 					<ul class="article-operations" th:with="id=${article.id}">
-						<li><a th:href="@{/sbk-admin/article/edit/{id}(id=${id})}" class="tool-icon edit-link" title="Izmeni">
+						<li><a th:href="@{/articles/edit/{id}(id=${id})}" class="tool-icon edit-link" title="Izmeni">
 							<img alt="x" th:src="@{/resources/img/icons/edit.svg}" width="16" height="16"/>
 						</a></li>
-						<li><a th:href="@{/sbk-admin/article/delete/{id}(id=${id})}" class="tool-icon delete-item" th:alt="${article.id}" title="Obriši članak">
+						<li><a th:href="@{/articles/delete/{id}(id=${id})}" class="tool-icon delete-item" th:alt="${article.id}" title="Obriši članak">
 							<img alt="x" th:src="@{/resources/img/icons/trash.svg}" width="16" height="16"/>
 						</a></li>
 					</ul>

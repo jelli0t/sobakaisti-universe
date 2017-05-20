@@ -13,11 +13,7 @@
   <url>http://maven.apache.org</url>
   
   <dependencies>
-  	<dependency>
-  		<groupId>org.sobakaisti</groupId>
-  		<artifactId>sobakaisti-core</artifactId>
-  		<version>1.0-SNAPSHOT</version>
-  	</dependency>
+  	
   	<dependency>
   		<groupId>org.springframework</groupId>
   		<artifactId>spring-web</artifactId>
@@ -41,6 +37,11 @@
   	<dependency>
   		<groupId>javax.validation</groupId>
   		<artifactId>validation-api</artifactId>
+  	</dependency>
+  	<dependency>
+  		<groupId>org.sobakaisti</groupId>
+  		<artifactId>sobakaisti-core</artifactId>
+  		<version>1.0-SNAPSHOT</version>
   	</dependency>
   </dependencies>
  
